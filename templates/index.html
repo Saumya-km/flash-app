@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flash App</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 100px; }
+        .card { border: 2px solid #555; padding: 30px; width: 300px; margin: auto; border-radius: 10px; }
+        .answer { display: none; margin-top: 10px; }
+        button { margin-top: 20px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h3>{{ card.question }}</h3>
+        <div class="answer" id="answer">{{ card.answer }}</div>
+        <button onclick="document.getElementById('answer').style.display='block'">Show Answer</button>
+        <br><br>
+        <a href="/?card={{ card_id + 1 }}"><button>Next</button></a>
+    </div>
+</body>
+</html>
