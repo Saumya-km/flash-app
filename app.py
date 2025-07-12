@@ -24,6 +24,5 @@ def index():
     card = flashcards[card_id % len(flashcards)]
     return render_template("index.html", card=card, card_id=card_id)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
 
