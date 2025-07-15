@@ -23,6 +23,7 @@ def index():
     card_id = int(request.args.get("card", 0))
     card = flashcards[card_id % len(flashcards)]
     return render_template("index.html", card=card, card_id=card_id)
-
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)
 
 
