@@ -1,0 +1,7 @@
+version: '3.2'
+service:
+   web:
+    build:
+      contenxt: .
+    ports:
+      - "5000:5000"
